@@ -1,0 +1,23 @@
+
+
+.alertError,
+.alertSuccess {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  padding: 7px 10px;
+}
+
+.alertError {
+  background: #d23838;
+}
+
+.alertSuccess {
+  background: #62b85c;
+}
+
+.alert span {
+  flex-grow: 1;
+  font-size: 15px;
+  margin-left: 10px; 
+}

@@ -1,0 +1,15 @@
+
+
+ @import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.content {
+  background: white;
+  box-shadow: 0 0 10px #00000033;
+  position: relative;
+  padding: 30px 30px 0;
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 1170px;
+  min-height: calc(100vh - 140px);
+  width: 100%;
+}

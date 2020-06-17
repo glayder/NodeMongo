@@ -1,0 +1,12 @@
+
+
+.loginScreen {
+  align-items: center;
+  background-image: linear-gradient(to bottom, #cccbcb, #fff);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+

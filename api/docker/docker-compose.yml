@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: ../../api/
+      dockerfile: ./docker/Dockerfile
+    image: api
+    container_name: api
+    environment:
+      - DOCKER=true
+      - NODE_ENV=development
+    restart: always
+    ports:
+      - "3100:3100"
+    networks:
+      - main-api
+    volumes:
+      - ../../api/src:/node/api/src
+
+  main:
+    build:
+      context: ../../main/
+      dockerfile: ./docker/Dockerfile
+    image: main
+    container_name: main
+    ports:
+      - "3000:3000"
+    networks:
+      - main-api
+    volumes:
+      - ../../main/src:/node/main/src
+    depends_on:
+      - api
+
+networks:
+  main-api:
+
+volumes:
+  db-data:
