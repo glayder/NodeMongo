@@ -10,7 +10,7 @@
     "jquery": "^3.4.1",
     "jspdf": "^1.5.3",
     "jwt-decode": "^2.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "mdbreact": "^4.17.0",
     "mui-datatables": "^2.8.1",
     "prop-types": "^15.7.2",
